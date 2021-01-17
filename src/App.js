@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PadBank from "./components/PadBank";
+import ControlPanel from "./components/ControlPanel"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {bankOne, bankTwo} from "./soundData"
+
+class App extends React.Component{
+  constructor(props)
+  {
+    super(props)
+    this.state = {
+      currentBank: bankOne,
+      power: false, 
+      isFirstBank: true,
+      displayTxt: ''
+    }
+    this.togglePower = this.togglePower.bind(this)
+    this.toggleBank = this.toggleBank.bind(this)
+    this.setDisplay = this.setDisplay.bind(this)
+  }
+
+  togglePower()
+  {
+    this.setState({power: !this.state.power})
+  }
+
+  toggleBank()
+  {
+    if(this.state.isFirstBank)
+    {
+      this.setState({currentBank: bankTwo, isFirstBank: false})
+    }
+    else
+    {
+      this.setState({currentBank: bankOne, isFirstBank: true})
+    }
+  }
+
+  setDisplay(txt='')
+  {
+    this.setState({displayTxt: txt})
+  }
+
+  render()
+  {
+    return (
+      <main className="main-content" id="drum-machine">
+        <PadBank currentBank={this.state.currentBank} power={this.state.power} display={this.setDisplay}/>
+        <ControlPanel togglePower={this.togglePower} toggleBank={this.toggleBank} power={this.state.power} bank={this.state.isFirstBank} display={this.state.displayTxt}/>
+      </main>
+    );
+  }
 }
+
+
 
 export default App;
