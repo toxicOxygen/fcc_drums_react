@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fcc_drums_react/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/fcc_drums_react/static/js/main.83db4f66.chunk.js",
+    "main.js.map": "/fcc_drums_react/static/js/main.83db4f66.chunk.js.map",
+    "runtime-main.js": "/fcc_drums_react/static/js/runtime-main.7ddf8df3.js",
+    "runtime-main.js.map": "/fcc_drums_react/static/js/runtime-main.7ddf8df3.js.map",
+    "static/js/2.f6df604c.chunk.js": "/fcc_drums_react/static/js/2.f6df604c.chunk.js",
+    "static/js/2.f6df604c.chunk.js.map": "/fcc_drums_react/static/js/2.f6df604c.chunk.js.map",
+    "static/js/3.63de08b9.chunk.js": "/fcc_drums_react/static/js/3.63de08b9.chunk.js",
+    "static/js/3.63de08b9.chunk.js.map": "/fcc_drums_react/static/js/3.63de08b9.chunk.js.map",
+    "index.html": "/fcc_drums_react/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/fcc_drums_react/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.f6df604c.chunk.js.LICENSE.txt": "/fcc_drums_react/static/js/2.f6df604c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ddf8df3.js",
+    "static/js/2.f6df604c.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.83db4f66.chunk.js"
+  ]
+}
